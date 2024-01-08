@@ -20,7 +20,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    max-width: 2000pxpx;
+    max-width: 2000px;
 
   }
   .top_section{
@@ -28,11 +28,12 @@
     flex-direction: row;
     width: 100%;
     height: auto;
-    padding: 30px 60px;
+    padding: 30px 90px;
     background-color: var(--color_dark);
     color: var(--color_text_ligth);
     justify-content: space-between;
     align-items: center;
+    position: sticky;
   }
   ul{
     display: flex;
@@ -46,19 +47,67 @@ li{
  a{
     color: var(--color_text_ligth);
     text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
  }
+ a:hover{
+    text-decoration: underline;
+ }
+
  .log_in{
     padding: 8px 8px;
+    background-color: var(--color_lighter);
+    color: var(--color_text_ligth);
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
  }
+
+ .log_in:hover{
+    box-shadow: 12px,  12px, 12px black;
+ }
+ 
 .middle_section{
     display: flex ;
     flex-direction: column;
-    background-image: url(./img/middle_section_background.jpg);
-   background-size: cover;
+    background-image: url(./img/middle_section_background.jpg) ;
+   background-size:cover;
    background-repeat: no-repeat;
+   /* background-size: cover; */
     width: 100%;
-    height: 500px;
-
+    height: 800px;
 }
+h1{
+    font-size: xx-large;
+}
+
+
+
+
+.footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        height: auto;
+        padding: 30px 60px;
+        background-color: var(--color_dark);
+        color: var(--color_text_ligth);
+        text-align: left;
+}
+
+.icons_soc_media{
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+a img  {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+
