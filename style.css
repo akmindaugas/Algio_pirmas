@@ -1,0 +1,64 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  :root{
+    --color_dark: #164863;
+    --color_lighter: #427D9D;
+    --color_greenish: #9BBEC8;
+    --color_light: #DDF2FD;
+    --color_text_ligth: #ffff;
+  }
+
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  main{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 2000pxpx;
+
+  }
+  .top_section{
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 30px 60px;
+    background-color: var(--color_dark);
+    color: var(--color_text_ligth);
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+  }
+li{
+    list-style-type: none;
+}
+ a{
+    color: var(--color_text_ligth);
+    text-decoration: none;
+ }
+ .log_in{
+    padding: 8px 8px;
+    border: none;
+    border-radius: 5px;
+ }
+.middle_section{
+    display: flex ;
+    flex-direction: column;
+    background-image: url(./img/middle_section_background.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+
+}
