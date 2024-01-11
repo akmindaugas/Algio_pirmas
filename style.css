@@ -38,12 +38,17 @@
     justify-content: space-between;
     align-items: center;
     position: sticky;
+    top: 0px;
   }
   ul{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1em;
+  }
+   #logo{
+    height: 150px;
+    width: auto;
   }
 li{
     list-style-type: none;
@@ -74,7 +79,7 @@ li{
  /* kalbos keitimas */
 
  .dropbtn {
-   background-color: var(--color_lighter);
+   background-color: var(--color_dark);
    color: var(--color_text_ligth);
    padding: 8px;
    font-size: var(--font-size-menu);
@@ -94,7 +99,7 @@ li{
    display: none;
    position: absolute;
    background-color: var(--color_light);
-   min-width: 40px;
+   min-width: 30px;
    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
    z-index: 1;
  }
@@ -102,14 +107,16 @@ li{
  /* Links inside the dropdown */
  .dropdown-content a {
    color: black;
-   padding: 8px 8px;
+   padding: 6px 6px;
    text-decoration: none;
    display: block;
+   
  }
  
  /* Change color of dropdown links on hover */
  .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: var(--color_lighter);
+  color: var(--color_text_ligth);
   border-radius: var(--border-radius);
 }
  
@@ -141,15 +148,17 @@ h1{
 
 .footer{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr ;
         grid-template-rows: auto;
+        column-gap: 30px;
         width: 100%;
         height: auto;
         padding: 30px 60px;
         background-color: var(--color_dark);
         color: var(--color_text_ligth);
-        text-align: left;
+        text-align: center;
 }
+
 
 .icons_soc_media{
   justify-content: space-evenly;
