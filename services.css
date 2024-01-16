@@ -144,6 +144,31 @@ border-radius: var(--border-radius);
 }
 h1{
   font-size: xx-large;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.titles{
+  line-height: 4em;
+  font-weight: 500;
+}
+.content{
+  display: grid;
+grid-template-areas: 
+'... ...'
+'image image';
+}
+
+.list_service{
+flex-direction: column;
+margin-bottom: 50px;
+}
+.img_service{
+ grid-area: image;
+  height: max-content;
+  background-image: url(./img/middle_section_background_2.jpg);
+  background-size:contain;
+  background-repeat: repeat;
+  padding: 8%;
 }
 
 .footer{
