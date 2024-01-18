@@ -71,10 +71,9 @@ li{
  /* .logo a{
 color: var(--black);
  } */
- /* .logo a:hover{
-  color: var(--color_dark);
+ .logo a:hover{
   box-shadow: none;
- } */
+ }
 
  .log_in, .dropbtn{
     padding: 8px 8px;
