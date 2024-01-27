@@ -1,5 +1,4 @@
 
-  /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
 
   :root{
@@ -68,9 +67,6 @@ li{
   border: none;
   box-shadow: 2px 2px 2px ;
  }
- /* .logo a{
-color: var(--black);
- } */
  .logo a:hover{
   box-shadow: none;
  }
@@ -95,7 +91,6 @@ color: var(--black);
    position: relative;
    display: inline-block;
  }
- 
  /* Dropdown Content (Hidden by Default) */
  .dropdown-content {
    display: none;
@@ -106,7 +101,6 @@ color: var(--black);
    color: var(--color_lighter);
    z-index: 1;
  }
- 
  /* Links inside the dropdown */
  .dropdown-content a {
    color: var(--color_dark);
@@ -116,7 +110,6 @@ color: var(--black);
    text-decoration: none;
    display: block;   
  }
- 
  /* Change color of dropdown links on hover */
  .dropdown-content a:hover {
   background-color: var(--color_lighter);
@@ -124,19 +117,16 @@ color: var(--black);
   border-radius: var(--border-radius);
   box-shadow: 3px 3px 3px ;
 }
- 
  /* Show the dropdown menu on hover */
  .dropdown:hover .dropdown-content {
    display: block;
    border-radius: var(--border-radius);
  }
- 
  /* Change the background color of the dropdown button when the dropdown content is shown */
  /* .dropdown:hover .dropbtn {
    background-color: var(--color_lighter);
    color: var(--color_dark);
  } */
-
 .middle_section{
     display: flex ;
     flex-direction: column;
@@ -150,7 +140,6 @@ color: var(--black);
 h1{
     font-size: xx-large;
 }
-
 .footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -166,7 +155,6 @@ h1{
 .contacts{
   text-align: left;
 }
-
 .icons_soc_media{
   justify-content: space-evenly;
   padding-top: 20px;
@@ -187,7 +175,6 @@ a img  {
     cursor: pointer;
     transition: 0.3s;
  }
-
  .submit_button:hover{
     box-shadow: 12px,  12px, 12px black;
  }
@@ -252,19 +239,14 @@ a img  {
   color: var(--color_dark);
   border: 2px solid var(--color);
 }
-
-
  @media screen and (max-width: 640px){
-  
  }
-
  @media screen and (max-width: 768px){
 .map{
   display: none;
 }
   
  }
-
  @media screen and (max-width: 1000px){
     .footer{
   display: flex;
