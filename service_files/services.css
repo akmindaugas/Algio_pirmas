@@ -95,7 +95,6 @@ color: var(--black);
    position: relative;
    display: inline-block;
  }
- 
  /* Dropdown Content (Hidden by Default) */
  .dropdown-content {
    display: none;
@@ -106,7 +105,6 @@ color: var(--black);
    color: var(--color_lighter);
    z-index: 1;
  }
- 
  /* Links inside the dropdown */
  .dropdown-content a {
    color: var(--color_dark);
@@ -116,7 +114,6 @@ color: var(--black);
    text-decoration: none;
    display: block;   
  }
- 
  /* Change color of dropdown links on hover */
  .dropdown-content a:hover {
   background-color: var(--color_lighter);
@@ -124,30 +121,24 @@ color: var(--black);
   border-radius: var(--border-radius);
   box-shadow: 3px 3px 3px ;
 }
- 
  /* Show the dropdown menu on hover */
  .dropdown:hover .dropdown-content {
    display: block;
    border-radius: var(--border-radius);
  }
- 
- /* Change the background color of the dropdown button when the dropdown content is shown */
- /* .dropdown:hover .dropbtn {
-   background-color: var(--color_lighter);
-   color: var(--color_dark);
- } */
 
  .middle_section{
   display: flex ;
   flex-direction: column;
   width: 100%;
-  height: 600px;
+  height: 800px;
   padding-left: 50px;
   padding-right: 50px;
   flex-wrap: wrap;
-  background-color: ;
-}
-
+     background-image: url(../img/middle_section_background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+ }
 
 .footer{
         display: grid;

@@ -1,5 +1,4 @@
 
-  /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
   @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
 
   :root{
@@ -28,6 +27,9 @@
   }
   h3{
     font-weight: 400;
+  }
+  h2{
+    margin-top: 2rem;
   }
   .top_section{
     display: inline-flex;
@@ -130,167 +132,27 @@ color: var(--black);
    display: block;
    border-radius: var(--border-radius);
  }
- 
- /* Change the background color of the dropdown button when the dropdown content is shown */
- /* .dropdown:hover .dropbtn {
-   background-color: var(--color_lighter);
-   color: var(--color_dark);
- } */
 
-
-  /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-  :root{
-    --color_dark: #272829;
-    --color_lighter: #61677A;
-    --color: #D8D9DA;
-    --color_beige: #FFF6E0;
-    --color_text_ligth: #ffff;
-    --font-size-menu: 22px;
-    --border-radius: 5px;
-  }
-
-  *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
-  main{
-    font-family:  'Open Sans';
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    max-width: 2000px;
-  }
-  h3{
-    font-weight: 400;
-  }
-  .top_section{
-    display: inline-flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    padding: 30px 90px;
-    background-color: var(--color);
-    color: var(--color_text_ligth);
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0px;
-    border-bottom: 2px solid var(--color_dark);
-  }
-  ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1em;
-  }
-   #logo{
-    height: 150px;
-    width: auto;
-  }
-li{
-    list-style-type: none;
-}
- a{
-    color: var(--color_dark);
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.3s;
- }
- a:hover{
-  padding: 8px 8px;
-  border-radius: var(--border-radius);
-  border: none;
-  box-shadow: 2px 2px 2px ;
- }
- /* .logo a{
-color: var(--black);
- } */
- .logo a:hover{
-  box-shadow: none;
- }
-
- .log_in, .dropbtn{
-    padding: 8px 8px;
-    background-color: var(--color);
-    color: var(--color_dark);
-    border: 2px solid var(--color_dark);
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    transition: 0.3s;
- }
-
- .log_in:hover, .dropbtn:hover{
-  color: var(--color_lighter);
- box-shadow: 2px 2px 2px ;
- }
- /* kalbos keitimas */
-  /* The container <div> - needed to position the dropdown content */
- .dropdown {
-   position: relative;
-   display: inline-block;
- }
- 
- /* Dropdown Content (Hidden by Default) */
- .dropdown-content {
-   display: none;
-   position: absolute;
-   background-color: var(--color_lighter);
-   min-width: 30px;
-   border-radius: var(--border-radius);
-   color: var(--color_lighter);
-   z-index: 1;
- }
- 
- /* Links inside the dropdown */
- .dropdown-content a {
-   color: var(--color_dark);
-   background-color: var(--color_lighter);
-   border-radius: var(--border-radius);
-   padding: 6px 6px;
-   text-decoration: none;
-   display: block;   
- }
- 
- /* Change color of dropdown links on hover */
- .dropdown-content a:hover {
-  background-color: var(--color_lighter);
-  color: var(--color_dark);
-  border-radius: var(--border-radius);
-  box-shadow: 3px 3px 3px ;
-}
- 
- /* Show the dropdown menu on hover */
- .dropdown:hover .dropdown-content {
-   display: block;
-   border-radius: var(--border-radius);
- }
- 
- /* Change the background color of the dropdown button when the dropdown content is shown */
- /* .dropdown:hover .dropbtn {
-   background-color: var(--color_lighter);
-   color: var(--color_dark);
- } */
 
  .middle_section{
   display: flex ;
   flex-direction: column;
   width: 100%;
-  height: 600px;
   height: fit-content;
   padding-left: 50px;
   padding-right: 50px;
-  flex-wrap: wrap;
-  /* background-color: ; */
+  flex-wrap: nowrap;
+    background-image: url(../img/middle_section_background.jpg) ;
+   background-size:cover;
+   background-repeat: no-repeat;
 }
 .brands img{
-  max-width: 450px;
-  height: fit-content;
-  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

@@ -1,52 +1,32 @@
+///------LOG IN PROMPT CODE----------------
+
 const logIn = document.getElementById('logInId');
 logIn.addEventListener('click', ()=>{
     prompt ('login');
     prompt ('password');
 }) ;
+// background img opacity--------
 // document.addEventListener('DOMContentLoaded', function () {
-// const LtLanguage = document.getElementById('LtContent');
-// LtLanguage.addEventListener('click',()=>{
-//     console.log ('LT Content');
-// const aboutId = document.getElementById('aboutId');
-// aboutId.innerText = "Apie mus";
-// const productId = document.getElementById('productId');
-// productId.innerText = "Produktai";
-// const serviceId = document.getElementById('serviceId');
-// serviceId.innerText = "Paslaugos";
-// const partnersId = document.getElementById('partnersId');
-// partnersId.innerText = "Partneriams";
+//     const middleSection = document.querySelector('.middle_section');
 
-// logIn.innerText = "Prisijungti";
-// const contactId = document.getElementById('contactId');
-// contactId.innerText = "Susisiekime:";
-// const h1Id = document.getElementById('h1Id');
-// h1Id.innerText = "Programinės įrangos sprendimai verslui";
+//     // Set initial opacity
+//     setOpacity(middleSection, 0.5); // Adjust the opacity value as needed
+
+//     function setOpacity(element, opacity) {
+//         element.style.opacity = opacity;
+//     }
 
 // });
 
-// const EnLanguage = document.getElementById('EnContent');
-// EnLanguage.addEventListener('click',()=>{
-//     console.log ('EN Content');
-// const aboutId = document.getElementById('aboutId');
-// aboutId.innerText = "About us";
-// const productId = document.getElementById('productId');
-// productId.innerText = "Products";
-// const serviceId = document.getElementById('serviceId');
-// serviceId.innerText = "Servise";
-// const partnersId = document.getElementById('partnersId');
-// partnersId.innerText = "For Partners";
 
-// logIn.innerText = "Login";
-// const contactId = document.getElementById('contactId');
-// contactId.innerText = "Contact us:";
-// const h1Id = document.getElementById('h1Id');
-// h1Id.innerText = "Software solutions for business";
-// });
-// });
+
+/// LANGUAGE TRANSLATION CODE-----------
 document.addEventListener('DOMContentLoaded', function () {
     const LtLanguage = document.getElementById('LtContent');
     LtLanguage.addEventListener('click', () => {
         console.log('LT Content');
+        updateButtonText('LtContent', 'LT');
+        ///NAVIGATION LT-----------------
         updateElementContent('aboutId', "Apie mus");
         updateElementContent('productId', "Produktai");
         updateElementContent('serviceId', "Paslaugos");
@@ -88,6 +68,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const EnLanguage = document.getElementById('EnContent');
     EnLanguage.addEventListener('click', () => {
         console.log('EN Content');
+        updateButtonText('LtContent', 'EN');
+        ///NAVIGATION EN-----------------
         updateElementContent('aboutId', "About us");
         updateElementContent('productId', "Products");
         updateElementContent('serviceId', "Servise");
@@ -137,6 +119,74 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     }
+
+    function updateButtonText(buttonId, newText) {
+        const buttonElement = document.getElementById(buttonId);
+        if (buttonElement) {
+            buttonElement.innerText = newText;
+        }
+    }  
 });
+
+
+///TEST CODE----
+// document.addEventListener('DOMContentLoaded', function () {
+//     const LtLanguage = document.getElementById('LtContent');
+//     const EnLanguage = document.getElementById('EnContent');
+//     const languageButton = document.getElementById('dropdown-btn');
+
+//     // Retrieve the selected language from localStorage
+//     const storedLanguage = localStorage.getItem('selectedLanguage');
+
+//     // Use the stored language or default to 'LT'
+//     const currentLanguage = storedLanguage || 'LT';
+
+//     // Set the initial content and language button text
+//     updateContentAndLanguage(currentLanguage);
+
+//     LtLanguage.addEventListener('click', () => {
+//         updateContentAndLanguage('LT');
+//     });
+
+//     EnLanguage.addEventListener('click', () => {
+//         updateContentAndLanguage('EN');
+//     });
+
+//     function updateContentAndLanguage(language) {
+//         console.log(`${language} Content`);
+//         updateElementContent('aboutId', language === 'LT' ? "Apie mus" : "About us");
+//         updateElementContent('productId', language === 'LT' ? "Produktai" : "Products");
+//         updateElementContent('serviceId', language === 'LT' ? "Paslaugos" : "Servise");
+//         updateElementContent('partnersId', language === 'LT' ? "Partneriams" : "For Partners");
+//         updateElementContent('logInId', language === 'LT' ? "Prisijungti" : "Login");
+//         updateElementContent('contactId', language === 'LT' ? "Susisiekime:" : "Contact us:");
+//         updateElementContent('h1Id', language === 'LT' ? "Programinės įrangos sprendimai verslui" : "Software solutions for business");
+        
+//         // Update the language button text
+//         updateButtonText('dropdown-btn', language);
+
+//         // Store the selected language in localStorage
+//         localStorage.setItem('selectedLanguage', language);
+//     }
+
+//     function updateElementContent(elementId, newText) {
+//         const element = document.getElementById(elementId);
+//         if (element) {
+//             const linkElement = element.querySelector('a');
+//             if (linkElement) {
+//                 linkElement.innerHTML = newText;
+//             } else {
+//                 element.innerText = newText;
+//             }
+//         }
+//     }
+
+//     function updateButtonText(buttonId, newText) {
+//         const buttonElement = document.getElementById(buttonId);
+//         if (buttonElement) {
+//             buttonElement.innerText = newText;
+//         }
+//     }
+// });
 
 

@@ -122,20 +122,18 @@ li{
    display: block;
    border-radius: var(--border-radius);
  }
- /* Change the background color of the dropdown button when the dropdown content is shown */
- /* .dropdown:hover .dropbtn {
-   background-color: var(--color_lighter);
-   color: var(--color_dark);
- } */
+
+
 .middle_section{
     display: flex ;
     flex-direction: column;
     background-image: url(./img/middle_section_background.jpg) ;
    background-size:cover;
    background-repeat: no-repeat;
-   /* background-size: cover; */
+   background-size: cover;
     width: 100%;
     height: 800px;
+  
 }
 h1{
     font-size: xx-large;
