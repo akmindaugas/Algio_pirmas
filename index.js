@@ -54,6 +54,19 @@ document.addEventListener('DOMContentLoaded', function () {
         updateElementContent('logInId', "Prisijungti");
         updateElementContent('contactId', "Susisiekime:");
         updateElementContent('h1Id', "Programinės įrangos sprendimai verslui");
+        /////ABOUT MIDDLE SECTION LT-----------------
+        updateElementContent('aboutIdh1', "Apie mus");
+        updateElementContent('aboutIdStart', "Kaip mes pradėjome");
+        updateElementContent('aboutIdStartContent', "Kaip mes pradejome: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione excepturi quidem dolorum ducimus nemo eligendi, culpa sapiente blanditiis quasi non, illo commodi? Iure eum, et debitis quasi eveniet temporibus");
+        updateElementContent('aboutIdHistory', "Istorija");
+        updateElementContent('aboutIdHistoryContent', "Istorija: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione excepturi quidem dolorum ducimus nemo eligendi, culpa sapiente blanditiis quasi non, illo commodi? Iure eum, et debitis quasi eveniet temporibus voluptatum dolorum. Perspiciatis, voluptas! Dignissimos facilis perspiciatis iste, illum esse possimus deserunt porro laboriosam omnis quisquam ipsa incidunt error commodi eum ab quas praesentium tempore soluta labore amet veniam quam est nulla. Natus laborum nemo ad odio, eos facere veritatis, non dicta commodi in, harum sed!");
+        updateElementContent('aboutIdVision', "Mūsų siekiai");
+        updateElementContent('aboutIdVisionContent', "Musu siekiai: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione excepturi quidem dolorum ducimus nemo eligendi, culpa sapiente blanditiis quasi non, illo commodi? Iure eum, et debitis quasi eveniet temporibus voluptatum dolorum. Perspiciatis, voluptas! Dignissimos facilis perspiciatis iste, illum esse possimus deserunt porro laboriosam omnis quisquam ipsa incidunt error commodi eum ab quas praesentium tempore soluta ");
+        updateElementContent('aboutIdFeedback', "Puikus palaikymas ir protinga kaina");
+        updateElementContent('aboutIdFeedbackAuthor', "Laimingas užsakovas");
+        // updateElementContent('', "");
+        // updateElementContent('', "");
+
     });
 
     const EnLanguage = document.getElementById('EnContent');
@@ -66,6 +79,16 @@ document.addEventListener('DOMContentLoaded', function () {
         updateElementContent('logInId', "Login");
         updateElementContent('contactId', "Contact us:");
         updateElementContent('h1Id', "Software solutions for business");
+        ////ABOUT MIDDLE SECTION EN--------
+        updateElementContent('aboutIdh1', "About us");
+        updateElementContent('aboutIdStart', "How we started");
+        updateElementContent('aboutIdStartContent', "How we started: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione excepturi quidem dolorum ducimus nemo eligendi, culpa sapiente blanditiis quasi non, illo commodi? Iure eum, et debitis quasi eveniet temporibus");
+        updateElementContent('aboutIdHistory', "History");
+        updateElementContent('aboutIdHistoryContent', "History: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione excepturi quidem dolorum ducimus nemo eligendi, culpa sapiente blanditiis quasi non, illo commodi? Iure eum, et debitis quasi eveniet temporibus voluptatum dolorum. Perspiciatis, voluptas! Dignissimos facilis perspiciatis iste, illum esse possimus deserunt porro laboriosam omnis quisquam ipsa incidunt error commodi eum ab quas praesentium tempore soluta labore amet veniam quam est nulla. Natus laborum nemo ad odio, eos facere veritatis, non dicta commodi in, harum sed!");
+        updateElementContent('aboutIdVision', "Our goals");
+        updateElementContent('aboutIdVisionContent', "Our goals: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione excepturi quidem dolorum ducimus nemo eligendi, culpa sapiente blanditiis quasi non, illo commodi? Iure eum, et debitis quasi eveniet temporibus voluptatum dolorum. Perspiciatis, voluptas! Dignissimos facilis perspiciatis iste, illum esse possimus deserunt porro laboriosam omnis quisquam ipsa incidunt error commodi eum ab quas praesentium tempore soluta ");
+        updateElementContent('aboutIdFeedback', "Superior service at reasonable costs");
+        updateElementContent('aboutIdFeedbackAuthor', "Happy customer");
     });
 
     function updateElementContent(elementId, newText) {
