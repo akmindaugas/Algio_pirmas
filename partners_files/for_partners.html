@@ -12,19 +12,19 @@
 
         <div class="top_section">
             <div class="logo">
-                <a href="../index.html"><img src="../icons/4IT.svg" alt="4_IT_logo" id="logo" ></a>
+                <a  href="../index.html"><img src="../icons/4IT.svg" alt="4_IT_logo" id="logo" ></a>
                     </div>
             <div class="menu top">
                 <ul>
-                    <li><a href="../about_files/about.html">Apie mus</a></li>
-                    <li><a href="../product_files/products.html">Produktai</a></li>
-                    <li><a href="../service_files/services.html">Paslaugos</a></li>
-                    <li><a href="../partners_files/for_partners.html">Partneriams</a></li>
-                    <li><button class="log_in" >Prisijungti</button></li>
+                    <li id="aboutId"><a href="../about_files/about.html">Apie mus</a></li>
+                    <li id="productId" ><a href="../product_files/products.html">Produktai</a></li>
+                    <li id="serviceId" ><a href="../service_files/services.html">Paslaugos</a></li>
+                    <li id="partnersId" ><a href="./partners_files/for_partners.html">Partneriams</a></li>
+                    <li  ><button  id="logInId" class="log_in" >Prisijungti</button></li>
                     <li> <div class="dropdown">
-                        <button class="dropbtn">LT</button>
-                        <div class="dropdown-content">
-                          <a href="#">EN</a>
+                        <button id="LtContent" onclick="" class="dropbtn">LT</button>
+                        <div  id="EnContent" class="dropdown-content">
+                          <a  href="#">EN</a>
         
                         </div>
                       </div></li>
@@ -36,18 +36,10 @@
     <h2>INFO FOR PARTNERS</h2>
     <h3>COMMING SOON</h3>
     </div>
-
     <div class="footer">
-        <!-- <div class="menu bottom">
-            <h3>Meniu:</h3>
-            <li><a href="#">Apie mus</a></li>
-            <li><a href="#">Produktai</a></li>
-            <li><a href="#">Paslaugos</a></li>
-            <li><a href="#">Partneriams</a></li>  
-            </ul>
-        </div> -->
+  
         <div class="contacts">
-            <h3>Susisiekime:</h3>
+            <h3 id="contactId" >Susisiekime:</h3>
             <div class="contact_info">
                 <h3>Eitminų g. 12 – 4, LT-12111, <br>
                      Vilnius <br>
@@ -81,19 +73,19 @@
         <div class="mail_us">
     <label for="email_address"></label>
             <input type="email" name="" id="email_address" placeholder="Jūsų el. paštas:">
-    
+
             <label for="your_message"></label>
             <input type="text" name="" id="your_message" placeholder="Jūsų žinutė:">
-    
+
             <label for="submit_button"></label> 
             <input class="submit_button" type="submit" value="Siūsti" id="btn_submit">
-    </div>
+</div>
     </div>
 
 
     </main>
     
 
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
 </body>
 </html>

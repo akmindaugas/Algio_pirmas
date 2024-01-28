@@ -47,32 +47,39 @@ document.addEventListener('DOMContentLoaded', function () {
     const LtLanguage = document.getElementById('LtContent');
     LtLanguage.addEventListener('click', () => {
         console.log('LT Content');
-        updateLinkText('aboutId', "Apie mus");
-        updateLinkText('productId', "Produktai");
-        updateLinkText('serviceId', "Paslaugos");
-        updateLinkText('partnersId', "Partneriams");
-        updateLinkText('logInId', "Prisijungti");
-        updateLinkText('contactId', "Susisiekime");
-        updateLinkText('h1Id', "Programinės įrangos sprendimai verslui");
+        updateElementContent('aboutId', "Apie mus");
+        updateElementContent('productId', "Produktai");
+        updateElementContent('serviceId', "Paslaugos");
+        updateElementContent('partnersId', "Partneriams");
+        updateElementContent('logInId', "Prisijungti");
+        updateElementContent('contactId', "Susisiekime:");
+        updateElementContent('h1Id', "Programinės įrangos sprendimai verslui");
     });
 
     const EnLanguage = document.getElementById('EnContent');
     EnLanguage.addEventListener('click', () => {
         console.log('EN Content');
-        updateLinkText('aboutId', "About us");
-        updateLinkText('productId', "Products");
-        updateLinkText('serviceId', "Servise");
-        updateLinkText('partnersId', "For Partners");
-        updateLinkText('logInId', "Login");
-        updateLinkText('contactId', "Contact us:");
-        updateLinkText('h1Id', "Software solutions for business");
+        updateElementContent('aboutId', "About us");
+        updateElementContent('productId', "Products");
+        updateElementContent('serviceId', "Servise");
+        updateElementContent('partnersId', "For Partners");
+        updateElementContent('logInId', "Login");
+        updateElementContent('contactId', "Contact us:");
+        updateElementContent('h1Id', "Software solutions for business");
     });
 
-    function updateLinkText(elementId, newText) {
-        const linkElement = document.getElementById(elementId).querySelector('a');
-        if (linkElement) {
-            linkElement.innerText = newText;
+    function updateElementContent(elementId, newText) {
+        const element = document.getElementById(elementId);
+        if (element) {
+            // Check if the element contains an anchor tag
+            const linkElement = element.querySelector('a');
+            if (linkElement) {
+                linkElement.innerHTML = newText;
+            } else {
+                element.innerText = newText;
+            }
         }
     }
 });
+
 
